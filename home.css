@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fa;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #203a43;
+  color: white;
+}
+
+.logo {
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.navbar nav a,
+.navbar nav button {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+/* Search Section */
+.search-section {
+  background: white;
+  max-width: 700px;
+  margin: -40px auto 0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.search-section h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-section form {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.search-section input,
+.search-section button {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.search-section button {
+  background: #2c5364;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

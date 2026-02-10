@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Help & Support</title>
+
+    <!-- Reuse navbar styling -->
+    <link rel="stylesheet" href="../CSS/flights.css" />
+    <link rel="stylesheet" href="../CSS/support.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <h1>AIRWAY</h1>
+      <button onclick="goBack()">Back</button>
+    </header>
+
+    <section class="support">
+      <h2>Help & Support</h2>
+
+      <div class="support-card">
+        <h3>📞 Customer Care</h3>
+        <p>Phone: +91 1800-123-456</p>
+        <p>Email: support@airway.com</p>
+      </div>
+
+      <div class="support-card">
+        <h3>❓ Frequently Asked Questions</h3>
+        <p><strong>Q:</strong> How can I cancel a booking?</p>
+        <p>
+          <strong>A:</strong> Cancellation will be available once backend
+          integration is completed.
+        </p>
+
+        <p><strong>Q:</strong> Can I change my seat?</p>
+        <p><strong>A:</strong> Seat changes are allowed before departure.</p>
+      </div>
+
+      <div class="support-card">
+        <h3>✉️ Contact Us</h3>
+        <form onsubmit="submitForm(event)">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="../JS/support.js"></script>
+  </body>
+</html>

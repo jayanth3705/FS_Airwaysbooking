@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f9;
+}
+
+.history {
+  max-width: 700px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.history h2 {
+  color: #203a43;
+  margin-bottom: 25px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.history-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.history-card p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.history-card .status {
+  color: green;
+  font-weight: bold;
+}

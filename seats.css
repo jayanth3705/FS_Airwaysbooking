@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f9;
+}
+
+/* Section container */
+.seat-section {
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* Card container */
+.seat-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Seat grid */
+.seat-map {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 14px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.seat {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #eee;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.seat:hover {
+  background: #dfe6e9;
+}
+
+.seat.selected {
+  background: #2c5364;
+  color: white;
+}
+
+/* Info text */
+.seat-info p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+/* Confirm button */
+.seat-info button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #2c5364;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.seat-info button:hover {
+  background: #203a43;
+}

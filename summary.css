@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f9;
+}
+
+.summary {
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* Card matches Seats card */
+.summary-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+#booking {
+  margin-bottom: 20px;
+  color: #203a43;
+}
+
+/* Content text */
+.summary-card p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+/* Confirm button */
+.summary-card button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #2c5364;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.summary-card button:hover {
+  background: #203a43;
+}

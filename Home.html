@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirWay | Home</title>
+    <link rel="stylesheet" href="../CSS/home.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="navbar">
+      <h1 class="logo">AIRWAY</h1>
+      <nav>
+        <a href="home.html">Flights</a>
+        <a href="bookings.html">My Bookings</a>
+
+        <button onclick="logout()">Logout</button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>The Fast Way & A Safe Way</h2>
+      <p>Book flights easily and travel comfortably</p>
+    </section>
+
+    <!-- Search Flights -->
+    <section class="search-section">
+      <h3>Search Flights</h3>
+      <form onsubmit="searchFlights(event)">
+        <label for="from" class="visually-hidden">From</label>
+        <select id="from" name="from" required>
+          <option value="" disabled selected>Select departure</option>
+          <option>Delhi</option>
+          <option>Mumbai</option>
+          <option>Bengaluru (Bangalore)</option>
+          <option>Chennai</option>
+          <option>Kolkata</option>
+          <option>Hyderabad</option>
+          <option>Ahmedabad</option>
+
+          <option>Visakhapatnam</option>
+          <option>Nagpur</option>
+          <option>Mangalore</option>
+
+          <option>Ranchi</option>
+        </select>
+
+        <label for="to" class="visually-hidden">To</label>
+        <select id="to" name="to" required>
+          <option value="" disabled selected>Select destination</option>
+          <option>Delhi</option>
+          <option>Mumbai</option>
+          <option>Bengaluru (Bangalore)</option>
+          <option>Chennai</option>
+          <option>Kolkata</option>
+          <option>Hyderabad</option>
+          <option>Ahmedabad</option>
+
+          <option>Visakhapatnam</option>
+          <option>Nagpur</option>
+          <option>Mangalore</option>
+
+          <option>Ranchi</option>
+        </select>
+
+        <input type="date" id="travelDate" required />
+
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <script src="../JS/home.js"></script>
+  </body>
+</html>

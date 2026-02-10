@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AirWay | Dashboard</title>
+
+    <!-- Reuse existing navbar styling -->
+    <link rel="stylesheet" href="../CSS/flights.css" />
+    <link rel="stylesheet" href="../CSS/dashboard.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <h1>AIRWAY</h1>
+      <button onclick="logout()">Logout</button>
+    </header>
+
+    <section class="dashboard">
+      <h2>Welcome to AirWay</h2>
+      <p>Your travel control center</p>
+
+      <div class="dashboard-grid">
+        <div class="dash-card" onclick="goTo('home.html')">
+          ✈️
+          <p>Search Flights</p>
+        </div>
+
+        <div class="dash-card" onclick="goTo('bookings.html')">
+          📄
+          <p>My Bookings</p>
+        </div>
+
+        <div class="dash-card" onclick="goTo('history.html')">
+          🕘
+          <p>Travel History</p>
+        </div>
+
+        <div class="dash-card" onclick="goTo('support.html')">
+          📞
+          <p>Help & Support</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function goTo(page) {
+        window.location.href = page;
+      }
+
+      function logout() {
+        localStorage.clear();
+        window.location.href = "login.html";
+      }
+    </script>
+  </body>
+</html>

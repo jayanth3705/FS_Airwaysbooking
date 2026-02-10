@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Select Seat</title>
+
+    <link rel="stylesheet" href="../CSS/flights.css" />
+    <link rel="stylesheet" href="../CSS/seats.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <h1>AIRWAY</h1>
+    </header>
+
+    <section class="seat-section">
+      <div class="seat-card">
+        <h2>Select Your Seat</h2>
+
+        <div class="seat-map" id="seatMap"></div>
+
+        <div class="seat-info">
+          <p>Selected Seat: <span id="selectedSeat">None</span></p>
+          <p>Total Price: ₹<span id="totalPrice">0</span></p>
+          <button onclick="confirmSeat()">Confirm</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="../JS/seat.js"></script>
+  </body>
+</html>

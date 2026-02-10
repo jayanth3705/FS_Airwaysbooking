@@ -1,0 +1,40 @@
+.dashboard {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.dashboard h2 {
+  color: #203a43;
+}
+
+.dashboard p {
+  color: #555;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.dash-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  font-size: 22px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dash-card p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.dash-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}

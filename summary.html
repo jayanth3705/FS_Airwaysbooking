@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Booking Summary</title>
+
+    <!-- Reuse navbar styling for consistency -->
+    <link rel="stylesheet" href="../CSS/flights.css" />
+    <link rel="stylesheet" href="../CSS/summary.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <h1>AIRWAY</h1>
+    </header>
+
+    <section class="summary">
+      <!-- Wrap everything inside card like Seats -->
+      <div class="summary-card">
+        <h2 id="booking">Booking Summary</h2>
+
+        <p><strong>Route:</strong> <span id="route"></span></p>
+        <p><strong>Flight:</strong> <span id="flightName"></span></p>
+        <p><strong>Seat:</strong> <span id="seat"></span></p>
+        <p><strong>Price:</strong> ₹<span id="price"></span></p>
+
+        <button onclick="confirmBooking()">Confirm Booking</button>
+      </div>
+    </section>
+
+    <script src="../JS/data.js"></script>
+    <script src="../JS/summary.js"></script>
+  </body>
+</html>
