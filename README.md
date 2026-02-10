@@ -47,5 +47,5 @@ The backend uses PHP + MySQL for data persistence, and the frontend is built wit
 
 ---
 
-## 📁 Folder Structure
+
 
